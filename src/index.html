@@ -84,7 +84,7 @@
                                     <source srcset="img/leo_tablet.webp" media="(min-width:768px)" type="image/webp">
                                     <source srcset="img/leo_tablet.jpg" media="(min-width:768px)">
                                     <source srcset="img/leo.webp" type="image/webp">
-                                    <img src="img/leo.jpg" alt="Львы" loading="lazy">
+                                    <img class="about__image" src="img/leo.jpg" alt="Львы" loading="lazy">
                                 </picture>
                             </li>
 
@@ -100,7 +100,7 @@
                                         type="image/webp">
                                     <source srcset="img/parrots_tablet.jpg" media="(min-width:768px)">
                                     <source srcset="img/parrots.webp" type="image/webp">
-                                    <img src="img/parrots.jpg" alt="Попугаи" loading="lazy">
+                                    <img class="about__image" src="img/parrots.jpg" alt="Попугаи" loading="lazy">
                                 </picture>
                             </li>
 
@@ -116,7 +116,7 @@
                                         type="image/webp">
                                     <source srcset="img/fulgens_tablet.jpg" media="(min-width:768px)">
                                     <source srcset="img/fulgens.webp" type="image/webp">
-                                    <img src="img/fulgens.jpg" alt="Панда" loading="lazy">
+                                    <img class="about__image" src="img/fulgens.jpg" alt="Панда" loading="lazy">
                                 </picture>
                             </li>
 
@@ -132,7 +132,7 @@
                                         type="image/webp">
                                     <source srcset="img/giraffe_tablet.jpg" media="(min-width:768px)">
                                     <source srcset="img/giraffe.webp" type="image/webp">
-                                    <img src="img/giraffe.jpg" alt="Жираф" loading="lazy">
+                                    <img class="about__image" src="img/giraffe.jpg" alt="Жираф" loading="lazy">
                                 </picture>
                             </li>
 
@@ -197,65 +197,61 @@
                 </div>
 
 
-                <div class="career__slider swiper">
-                    <ul class="career__image-list swiper-wrapper">
-                        <li class="career__image-item swiper-slide">
-                            <picture class="career__image-wrapper">
-                                <source srcset="img/parrots2.webp" type="image/webp">
-                                <img class="career__image" src="img/parrots2.jpg" alt="Попугаи" loading="lazy">
-                            </picture>
-                        </li>
-
-                        <li class="career__image-item swiper-slide">
-                            <picture class="career__image-wrapper">
-                                <source srcset="img/giraffe2.webp" type="image/webp">
-                                <img class="career__image" src="img/giraffe2.jpg" alt="Жирафы" loading="lazy">
-                            </picture>
-                        </li>
-
-                        <li class="career__image-item swiper-slide">
-                            <picture class="career__image-wrapper">
-                                <source srcset="img/giraffes.webp" type="image/webp">
-                                <img class="career__image" src="img/giraffes.jpg" alt="Жирафы в загоне" loading="lazy">
-                            </picture>
-                        </li>
-
-                        <li class="career__image-item swiper-slide">
-                            <picture class="career__image-wrapper">
-                                <source srcset="img/leo2.webp" type="image/webp">
-                                <img class="career__image" src="img/leo2.jpg" alt="львы" loading="lazy">
-                            </picture>
-                        </li>
-
-                        <li class="career__image-item swiper-slide">
-                            <picture class="career__image-wrapper">
-                                <source srcset="img/meerkat.webp" type="image/webp">
-                                <img class="career__image" src="img/meerkat.jpg" alt="суррикаты" loading="lazy">
-                            </picture>
-                        </li>
-                        <li class="career__image-item swiper-slide">
-                            <picture class="career__image-wrapper">
-                                <source srcset="img/flamingos.webp" type="image/webp">
-                                <img class="career__image" src="img/flamingos.jpg" alt="фламинго" loading="lazy">
-                            </picture>
-                        </li>
-
-                        <li class="career__image-item swiper-slide">
-                            <picture class="career__image-wrapper">
-                                <source srcset="img/zebra.webp" type="image/webp">
-                                <img class="career__image" src="img/zebra.jpg" alt="зебра" loading="lazy">
-                            </picture>
-                        </li>
-
-                        <li class="career__image-item swiper-slide">
-                            <picture class="career__image-wrapper">
-                                <source srcset="img/elephant.webp" type="image/webp">
-                                <img class="career__image" src="img/elephant.jpg" alt="слон" loading="lazy">
-                            </picture>
-                        </li>
-
-                    </ul>
-                    <div class="career__slider-pagination swiper-pagination"></div>
+                <div class="career__picture">
+                    <div class="career__slider swiper">
+                        <ul class="career__image-list swiper-wrapper">
+                            <li class="career__image-item swiper-slide">
+                                <picture class="career__image-wrapper">
+                                    <source srcset="img/parrots2.webp" type="image/webp">
+                                    <img class="career__image" src="img/parrots2.jpg" alt="Попугаи" loading="lazy">
+                                </picture>
+                            </li>
+                            <li class="career__image-item swiper-slide">
+                                <picture class="career__image-wrapper">
+                                    <source srcset="img/giraffe2.webp" type="image/webp">
+                                    <img class="career__image" src="img/giraffe2.jpg" alt="Жирафы" loading="lazy">
+                                </picture>
+                            </li>
+                            <li class="career__image-item swiper-slide">
+                                <picture class="career__image-wrapper">
+                                    <source srcset="img/giraffes.webp" type="image/webp">
+                                    <img class="career__image" src="img/giraffes.jpg" alt="Жирафы в загоне"
+                                        loading="lazy">
+                                </picture>
+                            </li>
+                            <li class="career__image-item swiper-slide">
+                                <picture class="career__image-wrapper">
+                                    <source srcset="img/leo2.webp" type="image/webp">
+                                    <img class="career__image" src="img/leo2.jpg" alt="львы" loading="lazy">
+                                </picture>
+                            </li>
+                            <li class="career__image-item swiper-slide">
+                                <picture class="career__image-wrapper">
+                                    <source srcset="img/meerkat.webp" type="image/webp">
+                                    <img class="career__image" src="img/meerkat.jpg" alt="суррикаты" loading="lazy">
+                                </picture>
+                            </li>
+                            <li class="career__image-item swiper-slide">
+                                <picture class="career__image-wrapper">
+                                    <source srcset="img/flamingos.webp" type="image/webp">
+                                    <img class="career__image" src="img/flamingos.jpg" alt="фламинго" loading="lazy">
+                                </picture>
+                            </li>
+                            <li class="career__image-item swiper-slide">
+                                <picture class="career__image-wrapper">
+                                    <source srcset="img/zebra.webp" type="image/webp">
+                                    <img class="career__image" src="img/zebra.jpg" alt="зебра" loading="lazy">
+                                </picture>
+                            </li>
+                            <li class="career__image-item swiper-slide">
+                                <picture class="career__image-wrapper">
+                                    <source srcset="img/elephant.webp" type="image/webp">
+                                    <img class="career__image" src="img/elephant.jpg" alt="слон" loading="lazy">
+                                </picture>
+                            </li>
+                        </ul>
+                        <div class="career__slider-pagination swiper-pagination"></div>
+                    </div>
                 </div>
 
             </div>
