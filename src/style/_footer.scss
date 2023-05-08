@@ -1,5 +1,5 @@
 .footer {
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 30px;
 
     @include lg {
@@ -8,51 +8,49 @@
     }
 
     &__container { 
-        display: grid;
-        grid-template-columns: auto;
-        row-gap: 32px;
-        grid-template-areas: 
-        'logo'
-        'social'
-        'devs'
-        'copy';
-        @include sm {
-            grid-template-columns: auto auto;
-            row-gap: 40px;
-            justify-content: space-between;
-            grid-template-areas: 
-            'logo social'
-            'copy devs';
+
+        @include sm{
+            display: grid;
+            gap: 40px;
+            grid-template-columns: 1fr max-content;
         }
         @include lg {
-            row-gap: 76px;
+            gap: 72px;
         }
+
     }
     &__logo {
-        grid-area: logo;
         max-width: 200px;
+        margin-bottom: 32px;
+
+        @include sm{
+            margin-bottom: 0px;
+        }
+
         @include lg {
             max-width: 360px;
         }
     }
     &__social-list {
-        grid-area: social;
         display: flex;
         align-items: center;
         gap: 16px;
+        margin-bottom: 32px;
 
+        @include sm {
+            margin-bottom: 0;
+        }
         @include lg {
             gap: 36px;
         }
     }
-    &__social-link svg {
+    &__social-link {
         width: 36px;
-        height: 36px;
+        display: block;
         transition: color 0.3s ease-in-out;
         
         @include lg {
             width: 50px;
-            height: 50px;
         }
     }
     &__social-link_yt{
@@ -65,30 +63,29 @@
             color: #0088cc;
         }
     }
-    &__developers {
-        grid-area: devs;
-        padding-top: 20px;
-        padding-bottom: 20px;
+    &__devs {
+        margin-bottom: 52px;
         line-height: 1;
 
         @include sm {
-            padding-top: 0;
-            padding-bottom: 0;
+            order: 2;
+            margin-bottom: 0;
         }
         @include lg {
             font-size: 20px;
         }
     }
     &__dev {
+
+        &:not(:last-child) {
+            margin-bottom: 19px;
+        }
+
         @include lg {
             margin-bottom: 16px;
         }
     }
-    &__dev:not(:last-child) {
-        margin-bottom: 19px;
-    }
     &__copyright {
-        grid-area: copy;
         line-height: 1;
     }
 }

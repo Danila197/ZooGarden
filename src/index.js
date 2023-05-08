@@ -19,20 +19,20 @@ slidersInit('.career__slider', {
         el: '.career__slider-pagination',
     },
     breakpoints: {
-        // when window width is >= 320px
         768: {
-            slidesPerView: 3,
-            spaceBetween: 20
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            pagination: true
         },
-        // when window width is >= 480px
         1024: {
-            slidesPerView: 3,
-            spaceBetween: 26
+            slidesPerView: 'auto',
+            spaceBetween: 26,
+            pagination: false
         },
-        // when window width is >= 640px
         1240: {
-            slidesPerView: 4,
-            spaceBetween: 20
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            pagination: false
         }
     }
 });
