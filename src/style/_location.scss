@@ -1,4 +1,5 @@
 .location {
+    position: relative;
 
     &__list {
         @include lg{
@@ -238,8 +239,7 @@
             }
         }
     }
-
-
+    
     &__item-title {
         font-weight: 1000;
         font-size: 20px;
@@ -247,7 +247,7 @@
         text-transform: uppercase;
         color: $back;
         margin-bottom: 16px;
-
+        
         @include lg{
             position: absolute;
             margin-bottom: 0;
@@ -263,12 +263,20 @@
             font-size: 32px;
         }
     }
-
+    
     &__desc {
         color: $second;
-
+        
         @include lg{
             display: none;
+        }
+    }
+    &__video-bg {
+        display: none;
+        
+        @include lg {
+            display: block;
+            z-index: -1;
         }
     }
 }
