@@ -115,6 +115,7 @@ html {
     font-size: 16px;
     color: $back;
     background-color: $second;
+    border: 2px solid transparent;
     border-radius: 80px;
 
     &:after{
@@ -129,6 +130,22 @@ html {
         padding: 17px 32px;
         font-size: 20px;
         gap: 10px;
+        
+        &:hover{
+            color: $main;
+            border: 2px solid $main;
+            &:after{
+                content: '';
+                display: block;
+                width: 16px;
+                height: 16px;
+                background: url('../img/arrow_black.svg') center/contain no-repeat;
+            }
+        }
+        &:focus{
+            border: 2px solid $main;
+            outline: none;
+        }
     }
   }
 

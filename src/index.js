@@ -6,8 +6,11 @@ import 'swiper/scss/pagination';
 import './index.scss';
 import { slidersInit } from './modules/sliders';
 import { videoBGInit } from './modules/videoBG';
+import { menuControl } from './modules/menuControl';
 
 // use modules
+videoBGInit();
+menuControl();
 
 slidersInit('.about__slider', {
     pagination: {
@@ -41,5 +44,3 @@ slidersInit('.career__slider', {
         }
     }
 });
-
-videoBGInit();
