@@ -5,6 +5,7 @@ import 'swiper/scss';
 import 'swiper/scss/pagination';
 import './index.scss';
 import { slidersInit } from './modules/sliders';
+import { videoBGInit } from './modules/videoBG';
 
 // use modules
 
@@ -19,6 +20,10 @@ slidersInit('.career__slider', {
         el: '.career__slider-pagination',
     },
     breakpoints: {
+        576: {
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+        },
         768: {
             slidesPerView: 'auto',
             spaceBetween: 20,
@@ -37,12 +42,4 @@ slidersInit('.career__slider', {
     }
 });
 
-
-const videoBGs = document.querySelectorAll('.video-bg');
-
-videoBGs.forEach(videoBG => {
-    videoBG.innerHTML = `
-    <source src="video/video.webm" type="video/webm">
-    <source src="video/video.mp4" type="video/mp4">
-`
-});
+videoBGInit();
