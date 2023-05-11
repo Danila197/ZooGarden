@@ -54,6 +54,13 @@
         line-height: 1;
         white-space: nowrap;
         transition: color 0.3s ease-in-out;
+        outline: 2px solid transparent;
+        outline-offset: 5px;
+        padding: 0 5px;
+
+        &:focus:not(:hover){
+            outline-color: $back;
+        }
 
         &_active{
             color: $back;
@@ -64,11 +71,6 @@
             &:hover{
                 color: $back;
             }
-            &:focus{
-                background-color: $back;
-                color: $second;
-                outline: none;
-            }
         }
 
         @include xl{
@@ -76,6 +78,11 @@
             padding: 16px 30px;
             border: 2px solid $back;
             border-radius: 80px;
+            outline: none;
+
+            &:focus:not(:hover){
+                background-color: $back;
+            }
 
             &_active{
                 color: $second;
@@ -104,6 +111,13 @@
 
         &_active{
             background-image: url('../img/close.svg');
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+            padding: 0 5px;
+
+        &:focus:not(:hover){
+            outline-color: $back;
+        }
         }
     }
 }
